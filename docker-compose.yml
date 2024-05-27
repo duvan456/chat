@@ -12,6 +12,11 @@ services:
       restart_policy:
         condition: on-failure
 
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+
   nginx:
     image: nginx:alpine
     ports:
